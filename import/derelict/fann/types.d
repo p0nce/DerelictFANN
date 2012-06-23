@@ -184,14 +184,14 @@ align(1) struct FANN_ERROR
     char* errstr;
 }
 
-        
+
 alias uint _Fann_Train;
 enum : _Fann_Train
 {
     FANN_TRAIN_INCREMENTAL,
     FANN_TRAIN_BATCH,
     FANN_TRAIN_RPROP,
-    FANN_TRAIN_QUICKPROP 
+    FANN_TRAIN_QUICKPROP
 }
 
 
@@ -264,12 +264,12 @@ enum : _Fann_Net_Type
     FANN_NETTYPE_SHORTCUT
 }
 
-        
-alias extern(C) int function(FANN* ann, 
-                             FANN_TRAIN_DATA* train, 
+
+alias extern(C) int function(FANN* ann,
+                             FANN_TRAIN_DATA* train,
                              uint max_epoch,
-                             uint epochs_between_reports, 
-                             float desired_error, 
+                             uint epochs_between_reports,
+                             float desired_error,
                              uint epochs) FANN_CALLBACK;
 
 alias extern(C) void function(uint num,

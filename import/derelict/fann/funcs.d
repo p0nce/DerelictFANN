@@ -42,7 +42,7 @@ extern(C)
 {
     version(FANN_Fixed)
     {
-        alias nothrow uint function(FANN* ann) da_fann_get_decimal_point; 
+        alias nothrow uint function(FANN* ann) da_fann_get_decimal_point;
         alias nothrow uint function(FANN* ann) da_fann_get_multiplier;
     }
     else
@@ -187,7 +187,7 @@ __gshared
 {
     version(FANN_Fixed)
     {
-        da_fann_get_decimal_point fann_get_decimal_point; 
+        da_fann_get_decimal_point fann_get_decimal_point;
         da_fann_get_multiplier fann_get_multiplier;
     }
     else
