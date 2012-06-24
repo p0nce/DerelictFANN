@@ -184,9 +184,8 @@ align(1) struct FANN_ERROR
     char* errstr;
 }
 
-
-alias uint _Fann_Train;
-enum : _Fann_Train
+alias uint training_algorithm_enum;
+enum : training_algorithm_enum
 {
     FANN_TRAIN_INCREMENTAL,
     FANN_TRAIN_BATCH,
@@ -194,16 +193,15 @@ enum : _Fann_Train
     FANN_TRAIN_QUICKPROP
 }
 
-
-alias uint _Fann_Error_Func;
-enum : _Fann_Error_Func
+alias uint error_function_enum;
+enum : error_function_enum
 {
     FANN_ERRORFUNC_LINEAR,
     FANN_ERRORFUNC_TANH
 }
 
-alias uint _Fann_Activation_Func;
-enum : _Fann_Activation_Func
+alias uint activation_function_enum;
+enum : activation_function_enum
 {
     FANN_LINEAR,
     FANN_THRESHOLD,
@@ -226,8 +224,8 @@ enum : _Fann_Activation_Func
 }
 
 
-alias uint _Fann_ErroNo;
-enum : _Fann_ErroNo
+alias uint fann_errno_enum;
+enum : fann_errno_enum
 {
     FANN_E_NO_ERROR,
     FANN_E_CANT_OPEN_CONFIG_R,
@@ -250,15 +248,15 @@ enum : _Fann_ErroNo
     FANN_E_SCALE_NOT_PRESENT
 }
 
-alias uint _Fann_Stop_Func;
-enum : _Fann_Stop_Func
+alias uint stop_function_enum;
+enum : stop_function_enum
 {
     FANN_STOPFUNC_MSE,
     FANN_STOPFUNC_BIT
 }
 
-alias uint _Fann_Net_Type;
-enum : _Fann_Net_Type
+alias uint network_type_enum;
+enum : network_type_enum
 {
     FANN_NETTYPE_LAYER,
     FANN_NETTYPE_SHORTCUT
