@@ -185,6 +185,13 @@
   <filesToClean>*.obj;*.cmd;*.build;*.json;*.dep</filesToClean>
  </Config>
  <Folder name="DerelictFANN">
+  <Folder name="gfm">
+   <Folder name="fann">
+    <File path="import\gfm\fann\all.d" />
+    <File path="import\gfm\fann\fann.d" />
+    <File path="import\gfm\fann\lib.d" />
+   </Folder>
+  </Folder>
   <File path="import\derelict\fann\fann.d" />
   <File path="import\derelict\fann\funcs.d" />
   <File path="import\derelict\fann\types.d" />
