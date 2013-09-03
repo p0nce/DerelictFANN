@@ -1,5 +1,5 @@
 {
-    "name": "derelict-unofficial-fann",
+    "name": "derelict_extras-fann",
     "description": "A dynamic binding to the FANN library.",
     "homepage": "http://github.com/p0nce/DerelictFANN",
     "license": "Boost",
@@ -11,6 +11,6 @@
     "targetPath": "lib",
 
     "dependencies": {
-        "derelict-util": "~master"
+        "derelict-util": ">=0.9.3"
     }
 }
