@@ -1,0 +1,16 @@
+{
+    "name": "derelict-unofficial-fann",
+    "description": "A dynamic binding to the FANN library.",
+    "homepage": "http://github.com/p0nce/DerelictFANN",
+    "license": "Boost",
+    "authors": [
+        "ponce"
+    ],
+
+    "targetName": "DerelictFANN",
+    "targetPath": "lib",
+
+    "dependencies": {
+        "derelict-util": "~master"
+    }
+}
