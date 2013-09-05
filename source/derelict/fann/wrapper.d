@@ -34,7 +34,6 @@ module derelict.fann.wrapper;
 import std.string;
 import std.conv;
 import derelict.fann.fann;
-import gfm.fann.lib;
 
 
 final class FANNLib
