@@ -35,6 +35,7 @@ public
 {
     import derelict.fann.types;
     import derelict.fann.funcs;
+    import derelict.fann.wrapper;
 }
 
 private

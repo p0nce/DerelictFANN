@@ -1,16 +1,17 @@
 {
-    "name": "derelict_extras-fann",
-    "description": "A dynamic binding to the FANN library.",
-    "homepage": "http://github.com/p0nce/DerelictFANN",
+    "name": "derelict_extras-opencl",
+    "description": "A dynamic binding to the OpenCL library.",
+    "homepage": "https://github.com/p0nce/DerelictCL",
     "license": "Boost",
     "authors": [
-        "ponce"
+        "vuaru",
+        "p0nce"
     ],
 
-    "targetName": "DerelictFANN",
+    "targetName": "DerelictCL",
     "targetPath": "lib",
 
     "dependencies": {
-        "derelict-util": ">=0.9.3"
+        "derelict-util": "~master"
     }
 }
