@@ -12,13 +12,13 @@ For information on how to load the FANN library via DerelictFANN, see the page [
 *Contrarily to most Derelict bindings, this also includes an OO wrapper.*
 
 ```D
-import derelict.opencl.cl;
+import derelict.fann.fann;
 
 void main() {
-    // Load the OpenCL library.
-    DerelictCL.load();
+    // Load the FANN library.
+    DerelictFANN.load();
     
-    // Now OpenCL functions can be called.
+    // Now FANN functions can be called, or FANN wrapper be used
     ...
 }
 ```
