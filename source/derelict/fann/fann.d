@@ -244,9 +244,3 @@ shared static this()
 {
     DerelictFANN = new DerelictFANNLoader();
 }
-
-shared static ~this()
-{
-    DerelictFANN.unload();
-}
-
