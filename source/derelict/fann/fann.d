@@ -60,20 +60,24 @@ private
         else
             static assert(0, "Need to implement FANN libNames for this operating system.");
     }
-    else version(FANN_Double)
+    else version(FANN_Float)
     {
         static if(Derelict_OS_Windows)
             enum libNames = "fanndouble.dll";
         else
             static assert(0, "Need to implement FANN libNames for this operating system.");
     }
-    else
+    else version(FANN_Double)
     {
         static if(Derelict_OS_Windows)
             enum libNames = "fannfloat.dll";
         else
             static assert(0, "Need to implement FANN libNames for this operating system.");
 
+    }
+    else
+    {
+        static assert(0, "Need to define FANN_Fixed, FANN_Float or FANN_Double as version identifier");
     }
 }
 
