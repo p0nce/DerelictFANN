@@ -13,5 +13,20 @@
 
     "dependencies": {
         "derelict-util": ">=1.0.0"
-    }
+    },
+
+    "configurations": [
+        {
+            "name": "fixed",
+            "versions": ["FANN_Fixed"]
+        },
+        {
+            "name": "float",
+            "versions": ["FANN_Float"]
+        },
+        {
+            "name": "double",
+            "versions": ["FANN_Double"]
+        }
+    ]
 }
