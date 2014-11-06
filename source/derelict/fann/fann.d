@@ -35,7 +35,6 @@ public
 {
     import derelict.fann.types;
     import derelict.fann.funcs;
-    import derelict.fann.wrapper;
 }
 
 private
@@ -171,7 +170,7 @@ class DerelictFANNLoader : SharedLibLoader
             myBindFunc(fann_read_train_from_file, "fann_read_train_from_file");
             myBindFunc(fann_create_train_from_callback, "fann_create_train_from_callback");
             myBindFunc(fann_destroy_train, "fann_destroy_train");
-            
+
             version(FANN_Fixed)
             {
             }
@@ -244,7 +243,7 @@ class DerelictFANNLoader : SharedLibLoader
             myBindFunc(fann_get_errstr, "fann_get_errstr");
             myBindFunc(fann_print_error, "fann_print_error");
 
-            version(FANN_Fixed) {} 
+            version(FANN_Fixed) {}
             else
             {
                 myBindFunc(fann_cascadetrain_on_data, "fann_cascadetrain_on_data");
