@@ -56,6 +56,8 @@ private
     {
         static if(Derelict_OS_Windows)
             enum libNames = "fannfixed.dll";
+        else static if (Derelict_OS_Linux)
+            enum libNames = "libfixedfann.so.2";
         else
             static assert(0, "Need to implement FANN libNames for this operating system.");
     }
@@ -63,6 +65,8 @@ private
     {
         static if(Derelict_OS_Windows)
             enum libNames = "fannfloat.dll";
+        else static if (Derelict_OS_Linux)
+            enum libNames = "libfloatfann.so.2";
         else
             static assert(0, "Need to implement FANN libNames for this operating system.");
     }
@@ -70,9 +74,10 @@ private
     {
         static if(Derelict_OS_Windows)
             enum libNames = "fanndouble.dll";
+        else static if (Derelict_OS_Linux)
+            enum libNames = "libdoublefann.so.2";
         else
             static assert(0, "Need to implement FANN libNames for this operating system.");
-
     }
     else
     {
@@ -87,7 +92,7 @@ class DerelictFANNLoader : SharedLibLoader
     {
         override void loadSymbols()
         {
-            // work-around : names in FreeImage.dll are stdcall-mangled on Windows
+            // work-around : names in fannfloat.dll are stdcall-mangled on Windows
             // Same story as for DerelictIL...
             void myBindFunc( Func )( ref Func f, string unmangledName ) {
                 version( Win64 ) enum isWin64 = true;
