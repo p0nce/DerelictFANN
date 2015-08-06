@@ -5,9 +5,7 @@ DerelictFANN
 
 A dynamic binding to [FANN](http://leenissen.dk/fann/wp/) for the D Programming Language.
 
-For information on how to build DerelictFANN and link it with your programs, please see the post [Using Derelict](http://dblog.aldacron.net/derelict-help/using-derelict/) at The One With D.
-
-For information on how to load the FANN library via DerelictFANN, see the page [DerelictUtil for Users](https://github.com/DerelictOrg/DerelictUtil/wiki/DerelictUtil-for-Users) at the DerelictUtil Wiki. In the meantime, here's some sample code.
+Please see the pages [Building and Linking Derelict](http://derelictorg.github.io/compiling.html) and [Using Derelict](http://derelictorg.github.io/using.html), or information on how to build DerelictFANN and load the FANN library at run time. In the meantime, here's some sample code.
 
 ```D
 import derelict.fann.fann;
