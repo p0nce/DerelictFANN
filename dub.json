@@ -5,14 +5,14 @@
     "license": "Boost",
     "authors": [
         "vuaru",
-        "p0nce"
+        "Guillaume Piolat (p0nce)"
     ],
 
     "targetName": "DerelictFANN",
     "targetPath": "lib",
 
     "dependencies": {
-        "derelict-util": "~>2.0"
+        "derelict-util": "~>3.0-alpha.1"
     },
 
     "configurations": [
