@@ -58,6 +58,8 @@ private
             enum libNames = "fannfixed.dll";
         else static if (Derelict_OS_Linux)
             enum libNames = "libfixedfann.so.2";
+        else static if (Derelict_OS_Mac)
+            enum libNames = "libfixedfann.dylib";
         else
             static assert(0, "Need to implement FANN libNames for this operating system.");
     }
@@ -67,6 +69,8 @@ private
             enum libNames = "fannfloat.dll";
         else static if (Derelict_OS_Linux)
             enum libNames = "libfloatfann.so.2";
+        else static if (Derelict_OS_Mac)
+            enum libNames = "libfloatfann.dylib";
         else
             static assert(0, "Need to implement FANN libNames for this operating system.");
     }
@@ -76,6 +80,8 @@ private
             enum libNames = "fanndouble.dll";
         else static if (Derelict_OS_Linux)
             enum libNames = "libdoublefann.so.2";
+        else static if (Derelict_OS_Mac)
+            enum libNames = "libdoublefann.dylib";
         else
             static assert(0, "Need to implement FANN libNames for this operating system.");
     }
